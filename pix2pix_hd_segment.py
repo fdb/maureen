@@ -28,7 +28,6 @@ def convert(input_folder, output_folder, method="tesselation"):
         connections = mp_face_mesh.FACEMESH_CONTOURS
 
     input_files = glob(os.path.join(input_folder, "*.jpeg"))
-    print(input_files)
     face_index = 1
     with mp_face_mesh.FaceMesh(
         max_num_faces=1,
